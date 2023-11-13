@@ -14,6 +14,9 @@ body {
   align-items: center;
   padding: 20px;
   font-family: "Barlow", sans-serif;
+  position: relative;
+  z-index: 2;
+  background: url('./images/desktop/image-header.jpg');
 }
 
 .nav > .nav-header {
@@ -23,7 +26,7 @@ body {
 .nav > .nav-header > .nav-title {
   display: inline-block;
   font-size: 25px;
-  color: black;
+  color: white;
   padding: 10px 10px 10px 10px;
 }
 
@@ -41,7 +44,7 @@ body {
   display: inline-block;
   padding: 13px 25px;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 /* .nav > .nav-links > a:hover {
@@ -74,17 +77,17 @@ body {
     width: 50px;
     height: 50px;
     padding: 13px;
-    color: black;
+    color: white;
   }
-  .nav > .nav-btn > label:hover,
+  /* .nav > .nav-btn > label:hover,
   .nav #nav-check:checked ~ .nav-btn > label {
     background-color: rgba(0, 0, 0, 0.3);
-  }
+  } */
   .nav > .nav-btn > label > span {
     display: block;
     width: 25px;
     height: 10px;
-    border-top: 2px solid black;
+    border-top: 2px solid white;
   }
   .nav > .nav-links {
     position: absolute;
@@ -96,11 +99,11 @@ body {
     overflow-y: hidden;
     top: 80px;
     left: 0px;
-    border: 1px solid black;
   }
   .nav > .nav-links > a {
     display: block;
     width: 100%;
+    color:black;
   }
   .nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
@@ -120,45 +123,33 @@ body {
   }
 }
 
-/* body {
-  margin: 0;
-  font-family: "Barlow", sans-serif;
-  font-family: "Fraunces", serif;
-}
+/* HERO */
 
-nav {
+.hero {
+  position: relative;
+  height: 90vh;
+  background: url('./images/desktop/image-header.jpg') center/cover no-repeat;
+  color: white;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  font-family: "Barlow", sans-serif;
+  justify-content: center;
+  text-align: center;
 }
 
-.logo {
-  font-size: 1.5em;
-  font-weight: bolder;
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 100px; 
 }
 
-.nav-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  font-size: 1.2em;
-  font-weight: bold;
+.hero img {
+  max-width: 600px;
+  height: 100px;
+  margin-bottom: 180px; 
 }
 
-.nav-menu li {
-  margin-right: 15px;
-}
 
-.nav-menu a {
-  text-decoration: none;
-  color: black;
-}
 
-/* .exit-icon, .navbar-toggler  {
-  display: none;
-  font-size: 1.5em;
-  cursor: pointer;
-} */
+
+
+
+
