@@ -109,7 +109,7 @@ body {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(50vh - 50px);
+    height: calc(40vh - 50px);
     overflow-y: auto;
   }
   .contact-btn {
@@ -143,12 +143,17 @@ body {
 
 .hero img {
   max-width: 600px;
-  height: 100px;
+  height: 130px;
   margin-bottom: 180px; 
 }
 
-
-
+@media (max-width: 700px) {
+  .hero img { 
+    max-width: 600px;
+  height: 120px;
+  margin-bottom: 240px;
+  }
+}
 
 
 
