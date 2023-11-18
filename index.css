@@ -469,3 +469,29 @@ p {
   }
   
 }
+
+/* Image grid */
+
+.image-grid {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.image-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  border: 1px solid black;
+}
+
+.image-grid-container img {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .image-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
