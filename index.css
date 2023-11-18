@@ -558,17 +558,18 @@ p {
 @media (max-width: 768px) {
 }
 
+/* attribution */
+
 .attribution {
-  font-size: 14px;
-  color: #888;
   text-align: center;
-  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+  margin: 20px 0;
 }
 
 .attribution a {
-  color: #1e3a8a;
+  color: #3498db;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .attribution a:hover {
